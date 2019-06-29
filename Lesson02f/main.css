@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.wrapper {
+    width: 1920px;
+    margin: 0 auto;
+    background-color: lightblue;
+}
+
+.header, section, .footer {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    height: 50px;
+    line-height: 50px;
+    /*background-color: yellow;*/
+    border-bottom: 1px solid white;
+}
+
+.menu {
+    float: right;
+}
+
+.menu-link {
+    display: inline-block;
+    margin: 0 20px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.menu-link a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+}
+
+.intro {
+    height: 100vh;
+}
+
+.intro-overlay {
+    height: 100%;
+    background-color: darkblue;
+    opacity: 0.2;
+    margin-top: -50px;
+}
