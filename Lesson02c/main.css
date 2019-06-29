@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.header {
+    background-color: #000;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    line-height: 50px;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.menu {
+    float: right;
+}
+
+.menu-link {
+    display: inline-block;
+    padding: 0 10px;
+    position: relative;
+}
+
+.dd {
+    /*display: none;*/
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #000;
+    width: 150px;
+    /**/
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s;
+    /**/
+}
+
+.menu-link:hover .dd {
+    /*display: block;*/
+    /**/
+    height: 160px;
+    /**/
+}
+
+.dd-link {
+    display: block;
+    padding: 10px;
+    text-align: right;
+    line-height: 1.2;
+    position: relative;
+    z-index: 0;
+}
+
+.menu-link::before, .dd-link::before {
+    content: '';
+    background-color: red;
+    display: block;
+    position: absolute;
+    transition: all 0.3s;
+    top: 50%;
+    left: 0;
+    height: 0;
+    z-index: -1;
+}
+
+.menu-link:hover::before, .dd-link:hover::before{
+    height: 100%;
+    width: 100%;
+    top: 0;
+}
+
+.intro {
+    height: 100vh;
+    /*background-image: url('./img/intro-background.jpg');*/
+    /*background-position: center;*/
+    background: url('./img/intro-background.jpg') center;
+    background-size: cover;
+}
+
+.intro-overlay {
+    height: 100%;
+    background-color: #000;
+    opacity: 0.5;
+}
+
+.intro-title {
+    color: #fff;
+    font-size: 50px;
+    text-transform: uppercase;
+    position: absolute;
+    width: 100%;
+    top: 40%;
+    text-align: center;
+}
