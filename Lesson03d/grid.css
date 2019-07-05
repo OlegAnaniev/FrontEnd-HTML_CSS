@@ -1,0 +1,48 @@
+.container,
+.container-fluid {
+    padding: 0 15px;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.col-3,
+.col-4,
+.col-6,
+.col-7,
+.col-10{
+    float: left;
+    padding: 0 15px;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.333%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.333%;
+}
+
+.col-10 {
+    width: 83.333%;
+}
+
+.justify-center {
+    justify-content: center;
+}
